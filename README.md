@@ -1,13 +1,14 @@
 # 🕌 waqf-odoo-modules
 
 > **Kumpulan Modul Ekstensi Resmi Odoo 19 & 18 Community Edition untuk Tata Kelola & Akuntansi Wakaf Nasional (PSAK 412/112 & LSP BWI)**  
-> Inisiatif kolaboratif **Forum Wakaf Produktif (FWP / [fwp.or.id](https://fwp.or.id))** bersama **Asosiasi Nazhir Indonesia (ANI / [ani.or.id](https://ani.or.id))** untuk kemandirian, transparansi, dan digitalisasi tata kelola Nazhir di seluruh Indonesia.
+> Inisiatif kolaboratif **Forum Wakaf Produktif (FWP / [fwp.or.id](https://fwp.or.id))** bersama **Asosiasi Nazhir Indonesia (ANI / [ani.or.id](https://ani.or.id))**, diinisiasi & dikembangkan oleh **Amal Produktif ([amalproduktif.or.id](https://amalproduktif.or.id))** untuk kemandirian, transparansi, dan digitalisasi tata kelola Nazhir di seluruh Indonesia.
 
 [![Odoo Version](https://img.shields.io/badge/Odoo-19.0%20%7C%2018.0%20(LTS)-714B67?logo=odoo&logoColor=white)](https://www.odoo.com)
 [![Standard](https://img.shields.io/badge/Standard-OCA%20Compliant-brightgreen.svg)](https://odoo-community.org/)
 [![Accounting Standard](https://img.shields.io/badge/Accounting-PSAK%20412%20(112)%20IAI-059669)](https://web.iaiglobal.or.id/)
 [![Competency Standard](https://img.shields.io/badge/Certification-LSP%20BWI%20%7C%20BNSP-blue)](https://www.bwi.go.id)
 [![Collaboration](https://img.shields.io/badge/Initiative-FWP%20%C3%97%20ANI-008080)](https://fwp.or.id)
+[![Developer: Amal Produktif](https://img.shields.io/badge/Lead%20Nazhir-Amal%20Produktif-16a34a.svg)](https://amalproduktif.or.id)
 [![License: LGPL-3](https://img.shields.io/badge/License-LGPL--3.0-blue.svg)](LICENSE)
 
 ---
@@ -92,7 +93,7 @@ Restart service Odoo Anda.
 5. Hapus filter default `"Apps"` di kotak pencarian, lalu ketik `waqf` atau `psak`.
 6. Klik tombol **Activate / Install** pada modul:
    - `Tata Kelola Wakaf - Core & Operasional` (`waqf_core`)
-   - `Akuntansi Wakaf PSAK 112 & Regulasi UU 41/2004` (`l10n_id_waqf_psak112`)
+   - `Akuntansi Wakaf PSAK 412 (PSAK 112) & Regulasi UU 41/2004` (`l10n_id_waqf_psak112`)
 
 ---
 
@@ -104,8 +105,22 @@ Bagi lembaga Nazhir atau tim IT yang ingin men-deploy server Odoo Wakaf lengkap 
 
 ---
 
+## 🏛️ Inisiator & Kolaborator Proyek
+
+Proyek standardisasi digitalisasi tata kelola dan akuntansi wakaf ini diinisiasi dan dikembangkan secara kolaboratif oleh:
+- **[Amal Produktif](https://amalproduktif.or.id)** – Lembaga Nazhir Wakaf Produktif terdaftar & *Lead Technical Maintainer* ekosistem modul.
+- **[Forum Wakaf Produktif (FWP)](https://fwp.or.id)** – Wadah kolaborasi dan inkubasi tata kelola wakaf produktif nasional.
+- **[Asosiasi Nazhir Indonesia (ANI)](https://ani.or.id)** – Asosiasi resmi penghimpun profesi dan kelembagaan Nazhir di seluruh Indonesia.
+
+Didukung oleh standardisasi kompetensi & regulasi:
+- **LSP Badan Wakaf Indonesia (BWI)** – Standar Kompetensi Kerja Nasional Indonesia (SKKNI) Nazhir SS.001 - SS.010.
+- **Dewan Standar Akuntansi Syariah (DSAS) IAI** – PSAK 412 (sebelumnya PSAK 112: Akuntansi Wakaf).
+
+---
+
 ## 👥 Kontribusi & Lisensi
 
 Proyek ini berada di bawah lisensi resmi [LGPL-3.0](LICENSE). 
 
 Kontribusi terbuka luas untuk seluruh pegiat wakaf, asosiasi nazhir, akuntan syariah, dan pengembang Odoo di seluruh Indonesia. Silakan buat *Issue* atau ajukan *Pull Request* mengikuti [Panduan Kontribusi](.github/pull_request_template.md).
+
