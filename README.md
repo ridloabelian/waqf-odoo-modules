@@ -40,7 +40,7 @@ Sistem ini dirancang untuk patuh dan selaras dengan 3 pilar:
 | :--- | :--- | :--- |
 | [`waqf_core`](waqf_core/) | ✅ Siap Pakai | **Modul Inti & Operasional**: Master data Wakif (KYC, NIK 16 digit, NPWP/NIB), pencatatan Akta Ikrar Wakaf (AIW/APAIW), alur verifikasi standar BWI (*Draft -> Verified Legal -> Approved Nazhir -> Issued*), dan cetak Sertifikat Wakaf resmi berstandar BWI (QWeb PDF). |
 | [`l10n_id_waqf_psak112`](l10n_id_waqf_psak112/) | ✅ Siap Pakai | **Akuntansi Syariah PSAK 412 (112)**: Bagan Akun Standar (COA), Klasifikasi Aset Neto (Permanen, Temporer, Tidak Terikat), Validasi Syariah dana pokok abadi haram berkurang/disalurkan, Batasan hak operasional Nazhir maks 10% (UU 41/2004 Ps. 12), Dashboard Interaktif OWL, dan 4 Laporan Keuangan Wajib PSAK 412/112. |
-| `waqf_distribution` | 🔜 Tahap Berikutnya | **Penyaluran Manfaat**: Master data Mauquf 'Alaih, pengajuan & komite penyaluran, bukti disbursement, dan validasi sumber dana HANYA dari surplus pengelolaan. |
+| [`waqf_distribution`](waqf_distribution/) | ✅ Siap Pakai | **Penyaluran Manfaat**: Master data Mauquf 'Alaih (Individu/Lembaga), Asesmen kelayakan syariah, Program pendayagunaan, Otomasi entri jurnal beban PSAK 412 (Aset Neto Tidak Terikat), Proteksi syariah dana pokok abadi haram disalurkan, dan Dokumen BAST/Kuitansi Standar BWI (QWeb PDF). |
 | `waqf_asset_management` | 🔜 Tahap Berikutnya | **Penjagaan Aset Abadi**: Pencatatan aset tanah & fisik wakaf, status sertifikat BPN, status asuransi syariah, dan log inspeksi pemeliharaan rutin. |
 
 ---
@@ -59,7 +59,13 @@ Sesuai PSAK 412 (112) Paragraf 26-28 dan UU No. 41/2004 Pasal 40:
 - Membatasi hak operasional nazhir maksimal **10% dari hasil bersih**. Jika melebihi atau hasil bersih defisit, sistem otomatis menolak transaksi.
 - Otomasi pembentukan entri jurnal pengakuan hak nazhir saat diverifikasi.
 
-### C. 4 Laporan Keuangan Wajib PSAK 412 (112)
+### C. Penyaluran Mauquf 'Alaih & BAST Standar BWI
+- Sesuai UU No. 41/2004 Pasal 22-23: Penyaluran terbagi ke sektor Pendidikan, Kesehatan, Ekonomi UMKM, Dakwah & Sarana Ibadah, serta Kemanusiaan.
+- Asesmen kelayakan mustahiq (Eligible) wajib terpenuhi sebelum persetujuan komite.
+- Otomasi pembentukan entri jurnal akuntansi beban penyaluran (`530100`) vs kas/bank saat realisasi disalurkan.
+- Pencetakan resmi Berita Acara Serah Terima (BAST) & Tanda Terima Manfaat Wakaf 3 pihak (Penerima, Staf Program, Pimpinan Nazhir).
+
+### D. 4 Laporan Keuangan Wajib PSAK 412 (112)
 1. **Laporan Posisi Keuangan (Neraca)**
 2. **Laporan Rincian Aset Wakaf**
 3. **Laporan Aktivitas**
@@ -94,6 +100,7 @@ Restart service Odoo Anda.
 6. Klik tombol **Activate / Install** pada modul:
    - `Tata Kelola Wakaf - Core & Operasional` (`waqf_core`)
    - `Akuntansi Wakaf PSAK 412 (PSAK 112) & Regulasi UU 41/2004` (`l10n_id_waqf_psak112`)
+   - `Penyaluran Manfaat Wakaf - Mauquf 'Alaih & Program Sosial` (`waqf_distribution`)
 
 ---
 

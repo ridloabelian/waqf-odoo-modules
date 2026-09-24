@@ -2,9 +2,9 @@ name: OCA & Python Linting CI
 
 on:
   push:
-    branches: [ "19.0", "18.0", "17.0" ]
+    branches: [ "19.0", "18.0", "17.0", "main" ]
   pull_request:
-    branches: [ "19.0", "18.0", "17.0" ]
+    branches: [ "19.0", "18.0", "17.0", "main" ]
 
 jobs:
   lint-and-validate:
@@ -38,13 +38,14 @@ jobs:
         run: |
           python3 -m py_compile waqf_core/*.py waqf_core/models/*.py
           python3 -m py_compile l10n_id_waqf_psak112/*.py l10n_id_waqf_psak112/models/*.py
+          python3 -m py_compile waqf_distribution/*.py waqf_distribution/models/*.py
           echo "All Python files compiled successfully."
 
       - name: Check Manifest Integrity
         run: |
           python3 -c "
           import ast
-          for manifest_path in ['waqf_core/__manifest__.py', 'l10n_id_waqf_psak112/__manifest__.py']:
+          for manifest_path in ['waqf_core/__manifest__.py', 'l10n_id_waqf_psak112/__manifest__.py', 'waqf_distribution/__manifest__.py']:
               with open(manifest_path) as f:
                   m = ast.literal_eval(f.read())
                   assert m.get('name'), f'Missing name in {manifest_path}'
