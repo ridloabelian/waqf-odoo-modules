@@ -39,13 +39,14 @@ jobs:
           python3 -m py_compile waqf_core/*.py waqf_core/models/*.py
           python3 -m py_compile l10n_id_waqf_psak112/*.py l10n_id_waqf_psak112/models/*.py
           python3 -m py_compile waqf_distribution/*.py waqf_distribution/models/*.py
+          python3 -m py_compile waqf_asset_management/*.py waqf_asset_management/models/*.py
           echo "All Python files compiled successfully."
 
       - name: Check Manifest Integrity
         run: |
           python3 -c "
           import ast
-          for manifest_path in ['waqf_core/__manifest__.py', 'l10n_id_waqf_psak112/__manifest__.py', 'waqf_distribution/__manifest__.py']:
+          for manifest_path in ['waqf_core/__manifest__.py', 'l10n_id_waqf_psak112/__manifest__.py', 'waqf_distribution/__manifest__.py', 'waqf_asset_management/__manifest__.py']:
               with open(manifest_path) as f:
                   m = ast.literal_eval(f.read())
                   assert m.get('name'), f'Missing name in {manifest_path}'
