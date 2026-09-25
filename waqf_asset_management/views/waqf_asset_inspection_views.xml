@@ -112,7 +112,7 @@
                 <separator/>
                 <filter string="Butuh Tindak Lanjut" name="filter_needs_action" domain="[('action_status', 'in', ('pending', 'in_progress'))]"/>
 
-                <group expand="0" string="Kelompokkan Berdasarkan">
+                <group name="group_by">
                     <filter string="Aset Wakaf" name="group_asset" context="{'group_by': 'asset_id'}"/>
                     <filter string="Tipe Inspeksi" name="group_type" context="{'group_by': 'inspection_type'}"/>
                     <filter string="Kondisi Fisik" name="group_condition" context="{'group_by': 'condition_observed'}"/>

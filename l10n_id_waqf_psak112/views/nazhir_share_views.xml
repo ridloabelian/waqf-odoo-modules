@@ -129,7 +129,7 @@
                 <filter string="Draf" name="filter_draft" domain="[('state', '=', 'draft')]"/>
                 <filter string="Diverifikasi" name="filter_verified" domain="[('state', '=', 'verified')]"/>
                 <filter string="Dijurnal" name="filter_posted" domain="[('state', '=', 'posted')]"/>
-                <group expand="0" string="Kelompokkan Berdasarkan">
+                <group name="group_by">
                     <filter string="Status" name="group_state" context="{'group_by': 'state'}"/>
                     <filter string="Periode Akhir" name="group_date_to" context="{'group_by': 'date_to:month'}"/>
                 </group>

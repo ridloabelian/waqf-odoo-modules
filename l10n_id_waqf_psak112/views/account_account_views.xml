@@ -24,12 +24,12 @@
         <field name="model">account.account</field>
         <field name="inherit_id" ref="account.view_account_search"/>
         <field name="arch" type="xml">
-            <filter name="account_type" position="before">
+            <filter name="inactiveacc" position="after">
+                <separator/>
                 <filter string="Akun PSAK 112" name="filter_waqf_account" domain="[('is_waqf_account', '=', True)]"/>
                 <filter string="Aset Neto Permanen (Pokok Abadi)" name="filter_neto_permanent" domain="[('waqf_net_asset_type', '=', 'permanent')]"/>
                 <filter string="Aset Neto Temporer (Berjangka)" name="filter_neto_temporary" domain="[('waqf_net_asset_type', '=', 'temporary')]"/>
                 <filter string="Aset Neto Tidak Terikat (Surplus)" name="filter_neto_unrestricted" domain="[('waqf_net_asset_type', '=', 'unrestricted')]"/>
-                <separator/>
             </filter>
             <group position="inside">
                 <filter string="Klasifikasi Aset Neto" name="group_net_asset" context="{'group_by': 'waqf_net_asset_type'}"/>

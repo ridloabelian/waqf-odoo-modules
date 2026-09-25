@@ -96,7 +96,7 @@
                 <filter string="Ekonomi UMKM" name="filter_economic" domain="[('sector', '=', 'economic')]"/>
                 <filter string="Dakwah &amp; Ibadah" name="filter_social" domain="[('sector', '=', 'social_religious')]"/>
 
-                <group expand="0" string="Kelompokkan Berdasarkan">
+                <group name="group_by">
                     <filter string="Sektor" name="group_sector" context="{'group_by': 'sector'}"/>
                 </group>
             </search>

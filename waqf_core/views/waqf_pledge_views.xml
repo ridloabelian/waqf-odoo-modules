@@ -234,7 +234,7 @@
                 <filter string="Wakaf Uang" name="filter_cash" domain="[('waqf_category', '=', 'movable_cash')]"/>
                 <filter string="Aset Tidak Bergerak (Tanah/Gedung)" name="filter_immovable" domain="[('waqf_category', '=', 'immovable')]"/>
 
-                <group expand="0" string="Kelompokkan Berdasarkan">
+                <group name="group_by">
                     <filter string="Status" name="group_state" context="{'group_by': 'state'}"/>
                     <filter string="Wakif" name="group_partner" context="{'group_by': 'partner_id'}"/>
                     <filter string="Jenis Harta Wakaf" name="group_type" context="{'group_by': 'waqf_type_id'}"/>

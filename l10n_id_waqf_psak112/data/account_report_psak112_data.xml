@@ -33,7 +33,7 @@
                         <record id="exp_psak112_kas_wakaf" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">1101%</field>
+                            <field name="formula">1101</field>
                             <field name="subformula">debit - credit</field>
                             <field name="figure_type">monetary</field>
                         </record>
@@ -48,7 +48,7 @@
                         <record id="exp_psak112_piutang" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">1102%</field>
+                            <field name="formula">1102</field>
                             <field name="subformula">debit - credit</field>
                             <field name="figure_type">monetary</field>
                         </record>
@@ -63,7 +63,7 @@
                         <record id="exp_psak112_investasi" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">1201%</field>
+                            <field name="formula">1201</field>
                             <field name="subformula">debit - credit</field>
                             <field name="figure_type">monetary</field>
                         </record>
@@ -78,7 +78,7 @@
                         <record id="exp_psak112_tanah" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">1301%</field>
+                            <field name="formula">1301</field>
                             <field name="subformula">debit - credit</field>
                             <field name="figure_type">monetary</field>
                         </record>
@@ -93,7 +93,7 @@
                         <record id="exp_psak112_bangunan" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">1302%</field>
+                            <field name="formula">1302</field>
                             <field name="subformula">debit - credit</field>
                             <field name="figure_type">monetary</field>
                         </record>
@@ -108,7 +108,7 @@
                         <record id="exp_psak112_penyusutan" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">1303%</field>
+                            <field name="formula">1303</field>
                             <field name="subformula">debit - credit</field>
                             <field name="figure_type">monetary</field>
                         </record>
@@ -145,7 +145,7 @@
                         <record id="exp_psak112_liab_pendek" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">2101%</field>
+                            <field name="formula">2101</field>
                             <field name="subformula">credit - debit</field>
                             <field name="figure_type">monetary</field>
                         </record>
@@ -160,7 +160,7 @@
                         <record id="exp_psak112_nazhir_pay" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">2102%</field>
+                            <field name="formula">2102</field>
                             <field name="subformula">credit - debit</field>
                             <field name="figure_type">monetary</field>
                         </record>
@@ -175,7 +175,7 @@
                         <record id="exp_psak112_liab_temporer" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">2201%</field>
+                            <field name="formula">2201</field>
                             <field name="subformula">credit - debit</field>
                             <field name="figure_type">monetary</field>
                         </record>
@@ -212,7 +212,7 @@
                         <record id="exp_psak112_net_permanen" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">3101%</field>
+                            <field name="formula">3101</field>
                             <field name="subformula">credit - debit</field>
                             <field name="figure_type">monetary</field>
                         </record>
@@ -227,7 +227,7 @@
                         <record id="exp_psak112_net_temporer" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">3201%</field>
+                            <field name="formula">3201</field>
                             <field name="subformula">credit - debit</field>
                             <field name="figure_type">monetary</field>
                         </record>
@@ -242,7 +242,7 @@
                         <record id="exp_psak112_net_unrest" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">3301%</field>
+                            <field name="formula">3301</field>
                             <field name="subformula">credit - debit</field>
                             <field name="figure_type">monetary</field>
                         </record>
@@ -311,7 +311,7 @@
                         <record id="exp_psak112_rev_permanen" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">4101%</field>
+                            <field name="formula">4101</field>
                             <field name="subformula">credit - debit</field>
                             <field name="figure_type">monetary</field>
                         </record>
@@ -326,7 +326,7 @@
                         <record id="exp_psak112_rev_temporer" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">4102%</field>
+                            <field name="formula">4102</field>
                             <field name="subformula">credit - debit</field>
                             <field name="figure_type">monetary</field>
                         </record>
@@ -341,7 +341,7 @@
                         <record id="exp_psak112_rev_nonkas" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">4103%</field>
+                            <field name="formula">4103</field>
                             <field name="subformula">credit - debit</field>
                             <field name="figure_type">monetary</field>
                         </record>
@@ -356,7 +356,7 @@
                         <record id="exp_psak112_rev_yield" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">4201%</field>
+                            <field name="formula">4201</field>
                             <field name="subformula">credit - debit</field>
                             <field name="figure_type">monetary</field>
                         </record>
@@ -393,7 +393,7 @@
                         <record id="exp_psak112_exp_nazhir" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">5101%</field>
+                            <field name="formula">5101</field>
                             <field name="subformula">debit - credit</field>
                             <field name="figure_type">monetary</field>
                         </record>
@@ -408,7 +408,7 @@
                         <record id="exp_psak112_exp_kelola" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">5201%</field>
+                            <field name="formula">5201</field>
                             <field name="subformula">debit - credit</field>
                             <field name="figure_type">monetary</field>
                         </record>
@@ -423,7 +423,7 @@
                         <record id="exp_psak112_exp_salur" model="account.report.expression">
                             <field name="label">balance</field>
                             <field name="engine">account_codes</field>
-                            <field name="formula">5301%</field>
+                            <field name="formula">5301</field>
                             <field name="subformula">debit - credit</field>
                             <field name="figure_type">monetary</field>
                         </record>

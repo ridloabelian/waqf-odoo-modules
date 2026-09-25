@@ -159,7 +159,7 @@
                 <filter string="Tunai Langsung" name="filter_cash" domain="[('disbursement_method', '=', 'cash')]"/>
                 <filter string="Natura / Barang" name="filter_goods" domain="[('disbursement_method', '=', 'goods')]"/>
 
-                <group expand="0" string="Kelompokkan Berdasarkan">
+                <group name="group_by">
                     <filter string="Status" name="group_state" context="{'group_by': 'state'}"/>
                     <filter string="Program Penyaluran" name="group_program" context="{'group_by': 'program_id'}"/>
                     <filter string="Mauquf 'Alaih" name="group_beneficiary" context="{'group_by': 'beneficiary_id'}"/>

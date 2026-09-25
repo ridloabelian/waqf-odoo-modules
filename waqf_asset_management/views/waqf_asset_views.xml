@@ -190,7 +190,7 @@
                 <filter string="Sosial Non-Profit" name="filter_direct" domain="[('utilization_type', '=', 'direct_service')]"/>
                 <filter string="Lahan Idle" name="filter_idle" domain="[('utilization_type', '=', 'idle')]"/>
 
-                <group expand="0" string="Kelompokkan Berdasarkan">
+                <group name="group_by">
                     <filter string="Tipe Aset" name="group_type" context="{'group_by': 'asset_type'}"/>
                     <filter string="Status Legalitas" name="group_legal" context="{'group_by': 'legal_status'}"/>
                     <filter string="Kondisi Fisik" name="group_condition" context="{'group_by': 'asset_condition'}"/>

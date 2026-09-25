@@ -146,7 +146,7 @@
                 <filter string="Kesehatan" name="filter_health" domain="[('sector', '=', 'health')]"/>
                 <filter string="Ekonomi UMKM" name="filter_economic" domain="[('sector', '=', 'economic')]"/>
 
-                <group expand="0" string="Kelompokkan Berdasarkan">
+                <group name="group_by">
                     <filter string="Status Kelayakan" name="group_status" context="{'group_by': 'eligibility_status'}"/>
                     <filter string="Tipe Penerima" name="group_type" context="{'group_by': 'beneficiary_type'}"/>
                     <filter string="Sektor" name="group_sector" context="{'group_by': 'sector'}"/>
