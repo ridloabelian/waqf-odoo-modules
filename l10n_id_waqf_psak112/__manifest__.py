@@ -4,7 +4,7 @@
 {
     "name": "Akuntansi Wakaf PSAK 412 (PSAK 112) & Regulasi UU 41/2004",
     "summary": "Standar Akuntansi Wakaf PSAK 412 (sebelumnya PSAK 112), Engine account.report, Klasifikasi Aset Neto, Batasan Hak Nazhir 10%, dan Dashboard OWL",
-    "version": "19.0.1.0.0",
+    "version": "20.0.1.0.0",
     "category": "Accounting/Localizations",
     "author": "Amal Produktif, Forum Wakaf Produktif (FWP), Asosiasi Nazhir Indonesia (ANI), Odoo Community Association (OCA)",
     "website": "https://amalproduktif.or.id, https://fwp.or.id, https://ani.or.id",

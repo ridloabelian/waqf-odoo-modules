@@ -1,9 +1,9 @@
 # 🕌 waqf-odoo-modules
 
-> **Kumpulan Modul Ekstensi Resmi Odoo 19 & 18 Community Edition untuk Tata Kelola & Akuntansi Wakaf Nasional (PSAK 412/112 & LSP BWI)**  
+> **Kumpulan Modul Ekstensi Resmi Odoo 20, 19 & 18 Community Edition untuk Tata Kelola & Akuntansi Wakaf Nasional (PSAK 412/112 & LSP BWI)**  
 > Inisiatif kolaboratif **Forum Wakaf Produktif (FWP / [fwp.or.id](https://fwp.or.id))** bersama **Asosiasi Nazhir Indonesia (ANI / [ani.or.id](https://ani.or.id))**, diinisiasi & dikembangkan oleh **Amal Produktif ([amalproduktif.or.id](https://amalproduktif.or.id))** untuk kemandirian, transparansi, dan digitalisasi tata kelola Nazhir di seluruh Indonesia.
 
-[![Odoo Version](https://img.shields.io/badge/Odoo-19.0%20%7C%2018.0%20(LTS)-714B67?logo=odoo&logoColor=white)](https://www.odoo.com)
+[![Odoo Version](https://img.shields.io/badge/Odoo-20.0%20%7C%2019.0%20%7C%2018.0%20(LTS)-714B67?logo=odoo&logoColor=white)](https://www.odoo.com)
 [![Standard](https://img.shields.io/badge/Standard-OCA%20Compliant-brightgreen.svg)](https://odoo-community.org/)
 [![Accounting Standard](https://img.shields.io/badge/Accounting-PSAK%20412%20(112)%20IAI-059669)](https://web.iaiglobal.or.id/)
 [![Competency Standard](https://img.shields.io/badge/Certification-LSP%20BWI%20%7C%20BNSP-blue)](https://www.bwi.go.id)
@@ -26,7 +26,7 @@ Sistem ini dirancang untuk patuh dan selaras dengan 3 pilar:
 
 ## 🛡️ 2. Batasan Arsitektur Krusial (GUARDRAILS)
 
-- **100% Modul Ekstensi (Custom Add-ons)**: DILARANG keras mem-fork core Odoo! Modul berjalan murni di atas Odoo 19.0 & 18.0 Community Edition resmi.
+- **100% Modul Ekstensi (Custom Add-ons)**: DILARANG keras mem-fork core Odoo! Modul berjalan murni di atas Odoo 20.0, 19.0 & 18.0 Community Edition resmi.
 - **Standar OCA (Odoo Community Association)**: Seluruh struktur folder, manifest, naming conventions, dan lisensi mematuhi pedoman OCA.
 - **Engine Pelaporan Modern (`account.report`)**: Menggunakan engine pelaporan modern Odoo (`account.report`, `account.report.column`, `account.report.line`, `account.report.expression`).
 - **Antarmuka Reaktif OWL (Odoo Web Library)**: Menggunakan sintaks OWL terbaru untuk dashboard pelaporan interaktif.
@@ -81,13 +81,13 @@ Sesuai PSAK 412 (112) Paragraf 26-28 dan UU No. 41/2004 Pasal 40:
 
 ## 🚀 5. Panduan Instalasi Modul di Odoo Anda
 
-Jika Anda sudah memiliki instalasi Odoo 19.0 atau 18.0 yang berjalan:
+Jika Anda sudah memiliki instalasi Odoo 20.0, 19.0 atau 18.0 yang berjalan:
 
 ### Langkah 1: Kloning Repositori
 Masuk ke direktori custom add-ons Odoo Anda:
 ```bash
 cd /path/to/odoo/custom-addons
-git clone https://github.com/ridloabelian/waqf-odoo-modules.git -b 19.0
+git clone https://github.com/ridloabelian/waqf-odoo-modules.git -b 20.0
 ```
 
 ### Langkah 2: Tambahkan ke `addons_path`

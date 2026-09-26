@@ -4,7 +4,7 @@
 {
     "name": "Tata Kelola Wakaf - Core & Operasional",
     "summary": "Master Data Wakif, Pencatatan AIW/APAIW, dan Sertifikat Wakaf Standar BWI",
-    "version": "19.0.1.0.0",
+    "version": "20.0.1.0.0",
     "category": "Accounting/Localizations",
     "author": "Amal Produktif, Forum Wakaf Produktif (FWP), Asosiasi Nazhir Indonesia (ANI), Odoo Community Association (OCA)",
     "website": "https://amalproduktif.or.id, https://fwp.or.id, https://ani.or.id",
